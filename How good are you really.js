@@ -5,10 +5,17 @@ You receive an array with your peers' test scores. Now calculate the average and
 
 Return True if you're better, else False!*/
 
-function playerRankUp (points) {
-  if(points>=100){
-    return "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up."
+
+function betterThanAverage(classPoints, yourPoints) {
+  // Your code here
+  let classAverage = 0;
+  for (let i = 0; i < classPoints.length; i++){
+    classAverage += classPoints[i]; 
+  }
+  classAverage = classAverage/classPoints.length; 
+  if(yourPoints > classAverage){
+    return true
   }else{
     return false
   }
-}
+  }
