@@ -12,3 +12,4 @@ let  countSheep = function (num){
      sheepCount += i + ' sheep...'
   }
     return sheepCount
+``
