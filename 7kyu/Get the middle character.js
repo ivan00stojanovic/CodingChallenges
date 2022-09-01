@@ -2,6 +2,7 @@
 If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
 #ivan
 #ivan
+#i
 #Examples:
 
 Kata.getMiddle("test") should return "es"
