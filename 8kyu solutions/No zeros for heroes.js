@@ -18,5 +18,5 @@ function noBoringZeros(n) {
         n /= 10
       }
     }
-        return n
+        return n;
   }
