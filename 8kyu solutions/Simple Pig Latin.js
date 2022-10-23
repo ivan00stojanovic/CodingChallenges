@@ -15,4 +15,4 @@ function pigIt(str){
        }
      }
        return (change.join(' '))
-       }
+       };
