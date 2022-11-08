@@ -18,3 +18,4 @@ function solution(str){
     }
        return result
 }
+g
