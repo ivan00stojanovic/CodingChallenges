@@ -5,7 +5,7 @@ Examples
 "()"              =>  true
 ")(()))"          =>  false
 "("               =>  false
-"(())((()())())"  =>  true */
+"(())((()())())"  =>  true*/
 
 function validParentheses(parens) {
     let counter = 0
