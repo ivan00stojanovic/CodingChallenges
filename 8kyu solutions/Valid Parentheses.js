@@ -25,4 +25,4 @@ function validParentheses(parens) {
        }else{
          return false
         }
-   }
+   };
