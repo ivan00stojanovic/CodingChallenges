@@ -13,4 +13,4 @@ function removeEveryOther(arr){
       }
     }
       return result
-  
+}
