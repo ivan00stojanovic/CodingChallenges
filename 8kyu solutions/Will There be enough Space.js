@@ -16,3 +16,5 @@ cap = 100, on = 60, wait = 50 --> 10 # He can't fit 10 of the 50 waiting */
 function enough(cap, on, wait) {
     return wait + on <= cap ? 0 : (wait + on) - cap  
   }
+
+  //testing
