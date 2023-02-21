@@ -1,6 +1,6 @@
 # CodewarsChallenges
 
-This repository consists of my solutions to many coding challenges that i solved daily in [Codewars](https://www.codewars.com/) 
+This repository consists of my solutions to many coding challenges that i solved daily in [Codewars](https://www.codewars.com/) and [LeetCode](https://leetcode.com/) 
 
 # Tech stack
 
