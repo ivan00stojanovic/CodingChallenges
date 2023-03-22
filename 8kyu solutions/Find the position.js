@@ -5,6 +5,6 @@ Input :: "a"
 Ouput :: "Position of alphabet: 1" */
 
 function position(letter){
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';//regardless if string or array
   return `Position of alphabet: + ${(alphabet.indexOf(letter) + 1)}`;
 }
