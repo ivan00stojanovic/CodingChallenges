@@ -13,6 +13,6 @@ character   = "z"
 text after  = "zzz" */
 
 function contamination(text, char){
-    
+    // return char.repeat(text.length)
     return text.split('').fill(char,0).join('')
   }
