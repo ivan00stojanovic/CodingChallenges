@@ -13,15 +13,19 @@ maskify(                "") ==                 ""
 maskify("Skippy")                                   == "##ippy"
 maskify("Nananananananananananananananana Batman!") == "####################################man!" */
 
-function maskify(cc) {
-    if(cc.length <= 4) return cc
-    let result = ''
-      for(let j = 0; j < cc.length - 4 ;j++){
-        result += '#'
-      }
-      for(let i = cc.length - 4; i < cc.length; i++){
-        result += cc[i]
-      }
-    
-      return result
+// function maskify(cc) {
+    // if(cc.length <= 4) return cc
+    // let result = ''
+    //   for(let j = 0; j < cc.length - 4 ;j++){
+        // result += '#'
+    //   }
+    //   for(let i = cc.length - 4; i < cc.length; i++){
+        // result += cc[i]
+    //   }
+    // 
+    //   return result
+//   }
+
+  function maskify(cc) {
+    return cc.slice(-4).padStart(cc.length,'#')
   }
