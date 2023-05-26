@@ -23,3 +23,5 @@ function duplicateEncode(word){
 }
     return result.join('')
 }
+
+console.log(duplicateEncode('recede'))
