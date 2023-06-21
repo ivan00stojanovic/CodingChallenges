@@ -33,8 +33,18 @@ app.get('/api/persons', (req,res) => {
 
 app.get('/info', (req, res) => {
   const currentDate = new Date()
-  // console.log(currentDate)
+   console.log(currentDate)
   res.send(`<h2> Phonebook has info for ${persons.length} people</h2> <h2>${currentDate}</h2>`)
+})
+
+app.get('/api/persons/:id', (req,res) => {
+  const id = req.params.id
+  const entry = persons.find(entry => entry.id == id)
+    if(entry){
+      res.json(entry)
+    }else{
+      res.status(404).end()
+    }
 })
 
 app.listen(PORT, () => {
