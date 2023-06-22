@@ -53,6 +53,25 @@ app.delete('/api/persons/:id', (req,res) => {
     res.status(204).end()
 })
 
+const generateId = () => {
+  const maxId = persons.length > 0
+  ? Math.max( ...persons.map(n => n.id))
+  : 0
+    return maxId + 1
+}
+
+app.post('/api/persons', (req,res) =>{
+  const body = req.body
+  let entry = {
+    id: genereateId(),
+    name: body.name,
+    number: body.number
+  }
+
+  persons = persons.push(entry)
+  res.json(entry)
+})
+
 app.listen(PORT, () => {
     console.log(`Active on PORT ${PORT}`)
 })
