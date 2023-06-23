@@ -63,7 +63,7 @@ const generateId = () => {
 app.post('/api/persons', (req,res) =>{
   const body = req.body
   let entry = {
-    id: genereateId(),
+    id: genereteId(),
     name: body.name,
     number: body.number
   }
