@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const PORT = 3001
 
+app.use(express.json())
+
 let persons = 
 
 [
@@ -62,13 +64,26 @@ const generateId = () => {
 
 app.post('/api/persons', (req,res) =>{
   const body = req.body
+
+  if(!body.name){
+      return res.status(400).json({ error: 'Name missing :('})
+  }
+  if(!body.number){
+      return res.status(400).json({ error: 'Number missing :('})
+  }
+  if(persons.some(entry => entry.name === body.name)){
+    return res.status(409).json({error: 'Name must be unique!'})
+  }
+
+  
+
   let entry = {
     id: genereteId(),
     name: body.name,
     number: body.number
   }
 
-  persons = persons.push(entry)
+  persons.push(entry)
   res.json(entry)
 })
 
