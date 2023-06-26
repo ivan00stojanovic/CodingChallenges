@@ -69,10 +69,10 @@ app.post('/api/persons', (req,res) =>{
       return res.status(400).json({ error: 'Name missing :('})
   }
   if(!body.number){
-      return res.status(400).json({ error: 'Number missing :('})
+      return res.status(418).json({ error: 'Number missing :('})
   }
   if(persons.some(entry => entry.name === body.name)){
-    return res.status(422).json({error: 'Name must be unique!'})
+    return res.status(409).json({error: 'Name must be unique!'})
   }
 
   
