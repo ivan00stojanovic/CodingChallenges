@@ -1,8 +1,17 @@
 const express = require('express')
+const morgan = require('morgan')                             
 const app = express()
 const PORT = 3001
 
 app.use(express.json())
+app.use(morgan('tiny'))    
+
+morgan.token('object', function (req,res){
+  return `${JSON.stringify(req.body)}`
+})
+app.use(morgan(':method :url :status :res[content-length] :response=time ms'))                
+
+
 
 let persons = 
 
@@ -28,6 +37,8 @@ let persons =
       "number": "39-23-6423122"
     }
 ]
+
+console.log(persons[0])
 
 app.get('/api/persons', (req,res) => {
     res.json(persons)
