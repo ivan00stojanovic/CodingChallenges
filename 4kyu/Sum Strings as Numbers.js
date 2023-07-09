@@ -10,3 +10,5 @@ Python: your solution need to work with huge numbers (about a milion digits), co
 function sumStrings(a,b) { 
 return (BigInt(a) +BigInt(b)).toString()
 }
+
+console.log(sumStrings('1','2'), '3')
