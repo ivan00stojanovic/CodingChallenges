@@ -12,3 +12,15 @@ function createPhoneNumber(numbers){
     numbers.splice(9,0,'-')
         return numbers.join('')
   }
+
+  // solution #2
+  function createPhoneNumber(numbers){
+    var format = "(xxx) xxx-xxxx";
+    
+    for(var i = 0; i < numbers.length; i++)
+    {
+      format = format.replace('x', numbers[i]);
+    }
+    
+    return format;
+  }
