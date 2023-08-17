@@ -38,7 +38,7 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 /**
  * @param {number[]} prices
  * @return {number}
- */
+ **/
 var maxProfit = function(prices) {
     let minPrice = prices[0];
     let maxProfit = 0;
