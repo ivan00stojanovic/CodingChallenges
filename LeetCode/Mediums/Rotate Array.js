@@ -32,26 +32,7 @@ rotate 2 steps to the right: [3,99,-1,-100]
 //         return arr
 // }
 
-const rotate = (nums, k) => {
-    const reverse = (start, end) => {
-      while (start < end) {
-        const temp = nums[start];
-        nums[start] = nums[end];
-        nums[end] = temp;
-        start++;
-        end--;
-      }
-    };
-  
-    const n = nums.length;
-    k %= n; // Normalize k to be within array length
-  
-    reverse(0, n - 1);         // Reverse the entire array
-    reverse(0, k - 1);         // Reverse the first k elements
-    reverse(k, n - 1);         // Reverse the remaining elements
-  
-    return nums;
-  };
+
   
   
   
