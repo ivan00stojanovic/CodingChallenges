@@ -4,9 +4,7 @@ For example, repeats([4,5,7,5,4,8]) = 15 because only the numbers 7 and 8 occur 
 
 More examples in the test cases.
 
-Good luck!
-
-If you like this Kata, please try: */
+Good luck! */
 
 // The only integer we have is an array of numbers, in which only 2 numbers are only non-repeating
 // The function should return the sum of the two numbers which appear only once
