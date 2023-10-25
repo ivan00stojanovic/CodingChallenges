@@ -14,8 +14,9 @@ Examples
 * Input: [2,2,1,2,1], output = [2,2,2,1] */
 
 function removeSmallest(numbers) {
-    let removed = Math.min(...numbers)
-  let nadji = numbers.indexOf(removed)
-  numbers.splice(nadji, 1)
-  return numbers
+    let copy = numbers.slice()
+    let removed = Math.min(...copy)
+  let nadji = copy.indexOf(removed)
+  copy.splice(nadji, 1)
+  return copy
   }
