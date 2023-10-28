@@ -19,16 +19,13 @@ function sameCase(a, b) {
         !((b >= 'a' && b <= 'z') || (b >= 'A' && b <= 'Z'))) {
       return -1;
     }
-  
     if ((a.toLowerCase() === a && b.toLowerCase() === b) ||
         (a.toUpperCase() === a && b.toUpperCase() === b)) {
       return 1;
     }
-  
     return 0;
   }
   
   
   
     
-  
