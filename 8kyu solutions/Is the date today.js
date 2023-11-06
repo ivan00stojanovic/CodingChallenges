@@ -2,6 +2,11 @@
 
 Make sure that your function does not return a false positive by only checking the day. */
 
-function isToday(date) {
-    return date.getDate() === new Date().getDate()
-  }
+function isToday(inputDate) {
+  const today = new Date();
+  return (
+    inputDate.getFullYear() === today.getFullYear() &&
+    inputDate.getMonth() === today.getMonth() &&
+    inputDate.getDate() === today.getDate()
+  );
+}
