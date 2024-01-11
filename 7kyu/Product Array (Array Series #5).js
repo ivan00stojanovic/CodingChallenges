@@ -37,7 +37,8 @@ The Fourth element 300 is the product of all array's elements except the fourth 
 
 Finally ,The Fifth element 900 is the product of all array's elements except the fifth element 2 */
 
-function productArray(numbers){
+//solution num 1
+const productArray = (numbers) => {
     let result = []
       for(let i = 0; i < numbers.length; i++){
         const newArr = numbers.toSpliced(i,1)
@@ -48,7 +49,7 @@ function productArray(numbers){
   }
 
   //solution num 2
-function productArray(numbers){
+const productArray2nd = (numbers) => {
     let result = []
        let counter = 0
      while(numbers.length > counter){
