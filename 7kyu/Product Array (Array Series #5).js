@@ -46,3 +46,17 @@ function productArray(numbers){
       }
         return result
   }
+
+  //solution num 2
+function productArray(numbers){
+    let result = []
+       let counter = 0
+     while(numbers.length > counter){
+       const temp = numbers.shift()
+       let product = numbers.reduce((acc, cum) => acc * cum, 1)
+       result.push(product)
+       numbers.push(temp)
+       counter++
+     }
+        return result
+  }
