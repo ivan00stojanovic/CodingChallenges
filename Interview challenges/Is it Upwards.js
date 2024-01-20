@@ -15,8 +15,3 @@
     }
           return true
   }
-
-  console.log(goingUp(359))
-  console.log(goingUp(638))
-  console.log(goingUp(9))
-  console.log(goingUp(777))
