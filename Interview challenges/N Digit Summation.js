@@ -1,3 +1,4 @@
+// IT Academy test 2
 /* PART ONE: Write a function which returns the amount of digits the number parameter has */
 
 function digitCounter(n) {
