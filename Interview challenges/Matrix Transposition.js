@@ -23,4 +23,11 @@ function removeShortest(matrix){
         return result
   }
 
+
+  let test = [
+    [2,4,8],
+    [3,1,9],
+    [1,2,1],
+    [9,9,8]
+    ]
   console.log(removeShortest(test))
