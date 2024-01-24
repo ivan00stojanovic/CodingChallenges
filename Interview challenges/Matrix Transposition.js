@@ -23,6 +23,15 @@ function removeShortest(matrix){
         return result
   }
 
+  function removeLowestSumRow(matrix) {
+    const rowSums = matrix.map(row => row.reduce((sum, element) => sum + element, 0));
+  
+    const indexOfMinSum = rowSums.indexOf(Math.min(...rowSums));
+  
+    const updatedMatrix = matrix.filter((row, index) => index !== indexOfMinSum);
+  
+    return rowSums
+  }
 
   let test = [
     [2,4,8],
@@ -30,4 +39,6 @@ function removeShortest(matrix){
     [1,2,1],
     [9,9,8]
     ]
+  
   console.log(removeShortest(test))
+  console.log(removeLowestSumRow(test))
