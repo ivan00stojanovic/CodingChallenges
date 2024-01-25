@@ -22,6 +22,19 @@ function transpose(matrix){
       return result
 }
 
+function transpose2(matrix){
+    const rows = matrix.length;
+    const cols = matrix[0].length;
+  
+    for (let i = 0; i < rows; i++) {
+      for (let j = i + 1; j < cols; j++) {
+        const temp = matrix[i][j];
+        matrix[i][j] = matrix[j][i];
+        matrix[j][i] = temp;
+      }
+    }
+}
+
 let test = [
   [1,5,8],
   [2,8,4],
@@ -29,3 +42,4 @@ let test = [
 ]
 
 console.log(transpose(test))
+console.log(transpose2(test))
