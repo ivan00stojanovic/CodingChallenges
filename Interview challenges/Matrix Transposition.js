@@ -1,44 +1,31 @@
-/* IT Academy Test 2  
+/*  IT Academy test 1
 
-2.
-Write a function which takes a function as a parameter and returns a new matrix whose row with the lowest sum of its elements is removed from the matrix.
-Example:
+3.
 
-2 4 8       2 4 8
-3 1 9   =>  3 1 9
-1 2 1       9 9 8
-9 9 8 */
+Write a function which transpositions a matrix. 
+Example for a 3x3 matrix:
 
-function removeShortest(matrix){
-    let result = matrix.slice(0); let indexNeeded
-    let tempLowest = matrix[0].reduce((acc, cum) => acc + cum, 0)
-    matrix.forEach((arr, index) =>{
-      const sum = arr.reduce((acc,cum) => acc + cum, 0)
-      if(tempLowest > sum){
-        tempLowest = sum
-        indexNeeded = index
-      }
-    })
-        result.splice(indexNeeded,1)
-        return result
-  }
+1 5 8      1 2 9
+2 8 4 -->  5 8 7
+9 7 6      8 4 6
+*/
 
-  function removeLowestSumRow(matrix) {
-    const rowSums = matrix.map(row => row.reduce((sum, element) => sum + element, 0));
-  
-    const indexOfMinSum = rowSums.indexOf(Math.min(...rowSums));
-  
-    const updatedMatrix = matrix.filter((row, index) => index !== indexOfMinSum);
-  
-    return rowSums
-  }
+function transpose(matrix){
+  let result = []
+    for(let i = 0; i < matrix[0].length; i++){
+      let newArr = []
+        matrix.forEach((arr, indexOfArr) => {
+          newArr.push(arr[i])
+        })
+            result.push(newArr)
+    }
+      return result
+}
 
-  let test = [
-    [2,4,8],
-    [3,1,9],
-    [1,2,1],
-    [9,9,8]
-    ]
-  
-  console.log(removeShortest(test))
-  console.log(removeLowestSumRow(test))
+let test = [
+  [1,5,8],
+  [2,8,4],
+  [9,7,6]
+]
+
+console.log(transpose(test))
