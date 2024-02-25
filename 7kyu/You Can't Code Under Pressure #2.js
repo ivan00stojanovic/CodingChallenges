@@ -14,3 +14,4 @@ You need to make a constructor function with two methods (and only these two met
       counter++;
     };
   }
+
