@@ -31,3 +31,18 @@ var singleNumber = function(nums) {
         else nums.push(holder)
     }   
 }
+
+//second, more optimal solution
+var singleNumber = function(nums) {
+    let result = {};
+
+    for (let num of nums) {
+        result[num] = (result[num] || 0) + 1;
+    }
+
+    for (let key in result) {
+        if (result[key] === 1) {
+            return key*1;  
+        }
+    }
+};
