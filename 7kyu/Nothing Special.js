@@ -1,0 +1,19 @@
+/* The notorious Captain Schneider has given you a very straight forward mission.
+ Any data that comes through the system make sure that only non-special characters see the light of day.
+
+Create a function that given a string, retains only the letters A-Z (upper and lowercase), 0-9 digits, and whitespace characters. 
+Also, returns "Not a string!" if the entry type is not a string. */
+
+function nothingSpecial(str) {
+    if(typeof str !== 'string') return 'Not a string!'
+    let char = 'abcdefghijklmnopqrstuvwxyz' 
+      char += char.toUpperCase() + '0123456789 \t'; // Include both space and tab
+    char = char.split('')
+    let arr = str.split(''); let result = ''
+    for(let i = 0; i < arr.length; i++){
+      if(char.includes(arr[i])){
+        result += arr[i]
+      }
+    }
+        return result
+  }
