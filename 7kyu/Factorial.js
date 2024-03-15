@@ -15,3 +15,13 @@ Write a function to calculate factorial for a given input. If input is below 0 o
     }
       return num
   }
+
+  //recursive solution
+
+  function recursiveFactorial(n){
+    if( n <= 1 ) return 1
+      return n * recursiveFactorial(n-1)
+  }
+
+  console.log(recursiveFactorial(5), 120)
+  console.log(recursiveFactorial(7), 5040)
