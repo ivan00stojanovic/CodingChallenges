@@ -3,12 +3,14 @@
 Examples (Input -> Output)
 7  -> 3 (because odd numbers below 7 are [1, 3, 5])
 15 -> 7 (because odd numbers below 15 are [1, 3, 5, 7, 9, 11, 13])
+
 Expect large Inputs! */
 
+
 function oddCount(n){
-    let counter = 0
-    for(let i = 1; i < n; i++){
-      if(i % 2 !== 0) counter++
-    }
-      return  counter
+  let counter = 0
+  for(let i = n - 1; i >= 0; i--){
+    if(i % 2 !== 0) counter++
   }
+      return counter
+}
