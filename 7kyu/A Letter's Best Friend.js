@@ -29,3 +29,9 @@ function bestFriend(txt, a, b) {
           }
              return true
    }
+
+   //second solution
+
+   function bestFriend(txt, a, b) {
+    return txt.split('').every((x, i) => x !== a || txt[i+1] === b)
+  }
