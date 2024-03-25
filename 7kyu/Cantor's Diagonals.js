@@ -18,3 +18,9 @@ function cantor(nestedList) {
       })
           return result
   }
+
+  //second solution
+
+  function cantor2(nestedList) {
+    return nestedList.map((x,i)=>1-x[i]);
+  }
