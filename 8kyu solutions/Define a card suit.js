@@ -5,7 +5,8 @@ Our deck (is preloaded):
 ('3♣') -> return 'clubs'
 ('3♦') -> return 'diamonds'
 ('3♥') -> return 'hearts'
-('3♠') -> return 'spades' */
+('3♠') -> return 'spades' 
+*/
 
 function defineSuit(card) {
     let cardObj = {
@@ -14,6 +15,6 @@ function defineSuit(card) {
         '♥': 'hearts',
         '♠': 'spades'
     }
-    
+
         return cardObj[card[1]]
   }
