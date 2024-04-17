@@ -15,6 +15,6 @@ function defineSuit(card) {
         '♥': 'hearts',
         '♠': 'spades'
     }
-
-        return cardObj[card[1]]
+    
+        return card.length === 3 ? cardObj[card[2]] : cardObj[card[1]]
   }
