@@ -9,3 +9,9 @@ function arrayPlusArray(arr1, arr2) {
       arr2.forEach(x => arr2Sum += x)
     return arr1Sum + arr2Sum; 
 }
+
+//one liner solution
+
+function arrayPlusArray2(arr1, arr2){
+  return arr1.reduce((acc, cum) => acc + cum, 0) + arr2.reduce((acc, cum) => acc + cum, 0) 
+}
