@@ -34,3 +34,13 @@ var missingNumber = function(nums) {
        }
         return sum - sumWithout
 };
+
+// solution 2
+
+var missingNumber = function(nums) {
+    let sortedArr = nums.sort((a,b) => a - b)
+    if(!sortedArr.includes(0)) return 0
+        for(let i = 0; i <= sortedArr.length; i++){
+            if(sortedArr[i + 1] !== sortedArr[i] + 1) return sortedArr[i] + 1
+        }
+};
