@@ -24,3 +24,20 @@ Constraints:
 strs[i] is made up of lowercase English letters.
  */
 
+ function groupAnagrams(strs) {
+            let resultObj = {
+            }
+                for(let i = 0; i < strs.length; i++){
+                        let current = strs[i]
+                        let currentSorted = current.split('').sort().join('')
+                        // console.log(currentSorted)
+                        if(!resultObj[currentSorted]){
+                            resultObj[currentSorted] = [current]
+                          // console.log(resultObj)
+                        }else{
+                            resultObj[currentSorted].push(current)
+                        }
+                }
+                       let resultArray = Object.values(resultObj)
+                         return resultArray
+    }
