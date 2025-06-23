@@ -58,3 +58,13 @@ var missingNumber = function(nums) {
             if(sortedArr[i + 1] !== sortedArr[i] + 1) return sortedArr[i] + 1
         }
 };
+
+
+// O(n) solution / Gauss method
+
+var missingNumber = function(nums) {
+    const n = nums.length;
+    const expectedSum = n * (n + 1) / 2;
+        const actualSum = nums.reduce((sum, num) => sum + num, 0);
+            return expectedSum - actualSum;
+};
