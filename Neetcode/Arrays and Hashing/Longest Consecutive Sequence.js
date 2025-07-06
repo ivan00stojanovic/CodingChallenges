@@ -20,7 +20,8 @@ Output: 7
 Constraints:
 
 0 <= nums.length <= 1000
--10^9 <= nums[i] <= 10^9 */
+-10^9 <= nums[i] <= 10^9 
+*/
 
 
 function longestConsecutive(nums) {
@@ -43,6 +44,5 @@ function longestConsecutive(nums) {
             result = Math.max(result, currentLongest);
         }
     }
-
     return result;
 }
