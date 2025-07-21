@@ -15,3 +15,9 @@ function sumDigits(number) {
     array = array.map(num => num = parseInt(num))
       return array.reduce((acc, cum) => acc + cum, 0)
 }
+
+//one liner solution
+
+function sumDigits(number) {
+  return Math.abs(number).toString().split('').reduce(function(a,b){return +a + +b}, 0);
+}
