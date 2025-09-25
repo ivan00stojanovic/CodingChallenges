@@ -8,7 +8,7 @@ Tech used: Vanilla JavaScript
 
 # Optimizations
 
-After some time i go back to past problems and challenges and try to solve them using different methods, refactor code and make it more readable
+After some time i go back to past problems and challenges and try to solve them using different methods, refactor code and make it more readable.
 
 # What I've learned:
 
