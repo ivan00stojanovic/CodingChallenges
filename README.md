@@ -12,6 +12,6 @@ After some time i go back to past problems and challenges and try to solve them 
 
 # What I've learned:
 
-Codewars has helped me significantly with revision and repetition while also learning about new methods and tricks in JavaScript. 
+Codewars and Leetcode have helped me significantly with revision and repetition while also learning about new methods and tricks in JavaScript. 
 In addition to sharpening my coding skills, it also helped me with managing my frustrations and how to approach a problem that i will not always have a clear answer to immediately 
 
